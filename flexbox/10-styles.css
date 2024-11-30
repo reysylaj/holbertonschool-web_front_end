@@ -534,12 +534,17 @@ ul.row {
 /* Section HERO
       ============================= */
 
+.section-hero {
+    position: relative;
+    margin-top: -8.5rem;
+}
+
 .section-hero .section-body {
     padding: 10rem 4rem;
 }
 
 .section-hero .section-category {
-    color: color-white;
+    color: var(--color-white);
     text-transform: uppercase;
 }
 
@@ -548,10 +553,7 @@ ul.row {
     background-repeat: no-repeat;
     background-size: 90rem auto;
     background-color: #010101;
-    position: relative;
-    margin-top: -8.5rem;
 }
-
 
 .section-hero .section-title {
     margin-bottom: 5rem;
