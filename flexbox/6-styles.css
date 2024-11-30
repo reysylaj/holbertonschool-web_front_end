@@ -393,7 +393,6 @@ ul.row {
     padding: 0;
     list-style: none;
     text-align: center;
-    gap: var(--nav-item-margin);
 }
 
 .nav .nav-item {
@@ -401,6 +400,10 @@ ul.row {
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
+}
+
+.nav-item+.nav-item {
+    margin-left: var(--nav-item-margin);
 }
 
 .nav .nav-link {
