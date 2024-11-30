@@ -128,11 +128,7 @@ h3 {
     margin-top: 50px;
 }
 
-/* Remove float from column classes */
-[class*='col-'] {
-    /* Removed: float: left */
-    /* Other column styles should remain, flexbox will handle layout */
-}
+/* Entirely removed: [class*='col-'] selector */
 
 /* Ensure no clearfix is needed */
 .row::after {
@@ -386,30 +382,17 @@ section h1 span {
 
 /* Headings and Paragraphs */
 .itemblocks h2 {
-    font-size: 1.2rem;
+    font-size: 22px;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
 .itemblocks p {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .FAQ .row {
-        flex-direction: column;
-    }
-}
-
-/* Footer */
-.footer {
-    background-color: #071629;
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-.footer p {
-    margin: 0;
+.itemblocks .answer {
+    font-size: 14px;
+    color: #b3c1d1;
 }
