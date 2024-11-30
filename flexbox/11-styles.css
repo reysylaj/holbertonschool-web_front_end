@@ -718,8 +718,7 @@ ul.row {
     ============================= */
 
 .hero-article {
-    background-image: url(pic-article-02.jpg);
-    background-size: 150rem 100reml;
+    background-size: 150rem 100rem;
     background-position: 50% 0;
 }
 
