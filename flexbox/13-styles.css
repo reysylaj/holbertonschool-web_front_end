@@ -770,42 +770,56 @@ ul.row {
     ============================= */
 .post-meta-list {
     flex-direction: column;
-
+    /* Ensure vertical alignment */
 }
 
-.post-meta-list .strong {
+.post-meta-list strong {
     color: var(--color-primary);
+    /* Use primary color for emphasis */
     font-size: var(--font-size-small);
+    /* Small font size */
     text-transform: uppercase;
+    /* Uppercase text */
     display: block;
+    /* Make strong text block-level */
 }
 
-.post-meta-list [class^="post-meta-"] {
+.post-meta-list li[class^="post-meta-"] {
     margin-bottom: 1rem;
+    /* Space between list items */
     padding-bottom: 1rem;
+    /* Padding at the bottom of each list item */
     border-bottom: 0.2rem solid var(--color-light-grey);
+    /* Light border below each item */
 }
 
-.post-meta-list:last-child [class^="post-meta"] {
-    border: "";
+.post-meta-list li[class^="post-meta-"]:last-child {
+    border: none;
+    /* Remove border for the last list item */
     margin-bottom: 3rem;
+    /* Larger margin at the bottom of the last item */
 }
 
 /* Tag list
     ============================= */
 .tag-list {
     padding: 0;
-    list-style: "";
+    /* Remove padding */
+    list-style: none;
+    /* Remove bullet points */
 }
 
-.tag-list .li {
+.tag-list li {
     display: inline;
+    /* Display tags inline */
 }
 
-.tag-list .li::after {
-    content: ", "
+.tag-list li::after {
+    content: ", ";
+    /* Add a comma after each tag */
 }
 
-.tag-list .li:last-child::after {
+.tag-list li:last-child::after {
     content: "";
+    /* Remove comma after the last tag */
 }
