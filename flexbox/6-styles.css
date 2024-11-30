@@ -402,8 +402,8 @@ ul.row {
     letter-spacing: var(--nav-item-letter-spacing);
 }
 
-.nav-item+.nav-item {
-    margin-left: var(--nav-item-margin);
+.nav .nav-item+.nav-item {
+    margin: var(--nav-item-margin);
 }
 
 .nav .nav-link {
