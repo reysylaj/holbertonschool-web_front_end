@@ -960,11 +960,12 @@ textarea:focus {
 .form-group .form-help {
     margin: 0;
     line-height: 1.3;
-    letter-spacing: 0.19rem;
+    letter-spacing: 0.019rem;
     color: var(--color-dark-grey);
     font-size: var(--font-size-small);
     max-height: 0;
     overflow: hidden;
+    transition: .3s;
 }
 
 /* Form help state when form-group has focus-within */
