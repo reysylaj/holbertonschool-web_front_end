@@ -1028,13 +1028,13 @@ textarea:valid:not(:placeholder-shown) {
 ============================= */
 
 /* Button primary styles */
-button.button-primary {
+.button-primary {
     color: var(--color-white);
     background: var(--color-primary);
 }
 
 /* Button primary hover state */
-button.button-primary:hover {
+.button-primary:hover {
     color: var(--color-primary);
     background: var(--color-white);
 }
