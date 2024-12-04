@@ -956,6 +956,11 @@ textarea:focus {
     overflow: hidden;
 }
 
+/* Form help inside form-group, initially no margin */
+.form-group .form-help {
+    margin: 0;
+}
+
 /* Form help state when form-group has focus-within */
 .form-group:focus-within .form-help {
     max-height: 20rem;
