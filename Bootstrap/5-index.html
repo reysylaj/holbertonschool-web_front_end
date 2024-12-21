@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Holberton - Web Stack - Bootstrap</title>
+    <meta name="description" content="Bootstrap is a free and open-source CSS framework">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+    <!-- Small title for screen width <= 768px -->
+    <h1 class="d-block d-md-none text-center">Small title</h1>
+    <!-- Big title for screen width > 768px -->
+    <h1 class="d-none d-md-block text-center">Big title</h1>
+
+    <!-- Main container -->
+    <div class="container my-4 p-4 bg-info text-white rounded border border-info">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <!-- Left div -->
+            <div class="p-3 text-light border-right border-bottom border-light">
+                Left
+            </div>
+            <!-- Middle div -->
+            <div class="p-3 text-light border-left border-right border-bottom border-light shadow d-none d-md-block">
+                Middle
+            </div>
+            <!-- Right div -->
+            <div class="p-3 text-light border-left border-bottom border-light">
+                Right
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
