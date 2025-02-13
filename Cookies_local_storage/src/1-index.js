@@ -6,7 +6,13 @@ function setCookies(event) {
 
     const firstname = document.getElementById("firstname").value;
     const email = document.getElementById("email").value;
-    document.cookie = "firstname=" + firstname + "email=" + email;
+
+
+    const date = new Date();
+    date.setDate(date.getDate() + 10);
+
+    document.cookie = `firstname=${firstname}; expires=${date.toUTCString()};`
+    document.cookie = `email = ${email}; expires = ${date.toUTCString()};`
 }
 
 document.getElementById("show").addEventListener("click", showCookies())
