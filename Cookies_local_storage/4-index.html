@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Cookie Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        function setCookiesAndShowWelcomeMessage() {
+            Cookies.set('username', document.getElementById('username').value, { expires: 7 });
+            showWelcomeMessageOrForm();
+        }
+
+        function deleteCookiesAndShowForm() {
+            Cookies.remove('username');
+            showWelcomeMessageOrForm();
+        }
+
+        function showWelcomeMessageOrForm() {
+            const app = document.getElementById('app');
+            app.innerHTML = '';
+            const username = Cookies.get('username');
+
+            if (username) {
+                const welcomeMessage = document.createElement('h1');
+                welcomeMessage.textContent = `Welcome ${username}`;
+
+                const logoutButton = document.createElement('button');
+                logoutButton.textContent = 'Log out';
+                logoutButton.onclick = deleteCookiesAndShowForm;
+
+                app.appendChild(welcomeMessage);
+                app.appendChild(logoutButton);
+            } else {
+                const form = document.createElement('form');
+
+                const label = document.createElement('label');
+                label.textContent = 'Enter your name: ';
+
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.id = 'username';
+
+                const submitButton = document.createElement('button');
+                submitButton.textContent = 'Log in';
+                submitButton.type = 'button';
+                submitButton.onclick = setCookiesAndShowWelcomeMessage;
+
+                form.appendChild(label);
+                form.appendChild(input);
+                form.appendChild(submitButton);
+
+                app.appendChild(form);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', showWelcomeMessageOrForm);
+    </script>
+</body>
+
+</html>

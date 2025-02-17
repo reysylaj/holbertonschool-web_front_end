@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Demo</title>
+</head>
 
 <body>
+    <h1>Cookies Demo</h1>
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <br>
+    <button onclick="setCookies()">Log me in</button>
+    <button onclick="showCookies()">Show the cookies</button>
+    <div id="cookie-container"></div>
 
-    <div>
-        <h2>Login to the webiste</h2>
-        <div>
-            <form id="form">
-                <input type="text" id="firstname" placeholder="Firstname">
-                <input type="email" id="email" placeholder="Email">
-                <button type="submit" id="login">Log me in</button>
-            </form>
-            <h2>Cookies</h2>
-            <button id="show">Show the cookies</button>
-        </div>
-    </div>
-
-    <script src="./src/index.js"></script>
+    <script src="bundle.js"></script>
 </body>
 
 </html>
